@@ -43,9 +43,13 @@ def run_research_pipeline(topic:str)->dict:
     print('step 3- Writer is drafting the report...')
     print("="*50)
     
+    search_results = state['search_results']
+    scraped_content = state['scraped_content']
+
     research_combined=(
-        f'SEARCH RESULT:\n {state['search_results']}\n\n'
-        f'DETAILED SCRAPED CONTENT: \n {state['scraped_content']}'
+        
+        f"SEARCH RESULT:\n {search_results}\n\n"
+        f"DETAILED SCRAPED CONTENT: \n {scraped_content}"
     )
     
     state['report']=writer_chain.invoke(
