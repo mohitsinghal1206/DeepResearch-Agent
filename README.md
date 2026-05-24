@@ -79,67 +79,8 @@ User Input (Topic)
 
 > The system is LLM-agnostic by design — swapping in OpenAI GPT or Mistral requires changing a single line.
 
----
 
-## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.11+
-- Google Gemini API key → [Get one here](https://aistudio.google.com)
-- Tavily API key → [Get one here](https://tavily.com)
-
-### Installation
-
-```bash
-# Clone the repo
-git clone https://github.com/mohitsinghal1206/DeepResearch-Agent.git
-cd DeepResearch-Agent
-
-# Create virtual environment
-python -m venv .venv
-.venv\Scripts\activate  # Windows
-# source .venv/bin/activate  # Mac/Linux
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Configuration
-
-Create a `.env` file in the root directory:
-
-```env
-GOOGLE_API_KEY=your-gemini-api-key-here
-TAVILY_API_KEY=your-tavily-api-key-here
-```
-
-### Run
-
-**Terminal (pipeline only):**
-```bash
-python pipeline.py
-```
-
-**Streamlit UI:**
-```bash
-streamlit run streamlit_app.py
-```
-
----
-
-## 📁 Project Structure
-
-```
-DeepResearch-Agent/
-├── streamlit_app.py   # Streamlit UI with live pipeline tracker
-├── pipeline.py        # Orchestrates the full 4-step pipeline
-├── agents.py          # Search & Reader agents + Writer & Critic chains
-├── tools.py           # Tavily search tool + BeautifulSoup scraper
-├── requirements.txt   # Dependencies
-└── .env               # API keys (not committed)
-```
-
----
 
 ## 🖥️ UI Preview
 
@@ -154,23 +95,10 @@ The Streamlit UI features:
 ## 🔮 Roadmap
 
 - [ ] Add memory across research sessions
-- [ ] Support multiple LLM providers (OpenAI, Mistral, Anthropic)
+- [ ] Support multiple LLM providers (OpenAI, Mistral)
 - [ ] Export report as PDF or Word document
 - [ ] Add citation verification agent
 - [ ] Multi-topic batch research mode
-
----
-
-## 👨‍💻 Author
-
-**Mohit Singhal**
-- GitHub: [@mohitsinghal1206](https://github.com/mohitsinghal1206)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
