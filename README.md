@@ -70,14 +70,13 @@ User Input (Topic)
 | Layer | Technology |
 |---|---|
 | LLM | Google Gemini 2.5 Flash |
-| Agent Framework | LangChain + LangGraph |
+| Agent Framework | LangChain |
 | Web Search | Tavily Search API |
 | Web Scraping | BeautifulSoup4 + Requests |
 | Chain Composition | LangChain LCEL (pipes) |
 | UI | Streamlit |
 | Deployment | Streamlit Community Cloud |
 
-> The system is LLM-agnostic by design — swapping in OpenAI GPT or Mistral requires changing a single line.
 
 
 
